@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TFANS · Verificar identidad</title>
+<link rel="stylesheet" href="assets/tfans.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html">
+      <span class="mark"><svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 8c-1.6-3-4.4-4.2-6.6-3.8.2 2.4 2.2 4.6 5 5.2" fill="#C9A3F0"/>
+        <circle cx="11.5" cy="20" r="8.5" fill="#8B2FD6"/>
+        <circle cx="20.5" cy="20" r="8.5" fill="#C9A3F0"/>
+        <path d="M16 12.4c1.9 1.6 3 4.3 3 7.6s-1.1 6-3 7.6c-1.9-1.6-3-4.3-3-7.6s1.1-6 3-7.6z" fill="#7526B8"/>
+      </svg></span>
+      <span><span class="wordmark"><span>T</span>FANS</span><span class="tagline">Exclusive to you</span></span>
+    </a>
+    <div class="nav-actions"><a class="btn btn-quiet" href="ajustes.html">Salir</a></div>
+  </div>
+</header>
+
+<div class="wrap" style="max-width:960px">
+  <div class="micro mb-2">Paso 1 de 3 · Identidad</div>
+  <h1 class="d-xl" style="font-size:clamp(2.4rem,5vw,3.6rem)">Verifica quién eres<br><span class="it">antes de cobrar.</span></h1>
+  <p class="lead mt-2">Necesitamos comprobar que eres mayor de edad y que el perfil es tuyo. Tarda unos dos minutos y solo se hace una vez.</p>
+
+  <div class="sidebar-layout mt-4">
+    <div class="stack" style="gap:18px">
+      <div class="card">
+        <div class="rule"><span class="micro">Documento</span></div>
+        <p style="margin:0 0 14px;font-size:0.92rem">Ten a mano tu DNI, pasaporte o carné de conducir. Haz la foto con buena luz y sin reflejos.</p>
+        <div class="grid g-3" style="gap:12px">
+          <button class="chip" style="padding:14px">DNI</button>
+          <button class="chip" aria-pressed="true" style="padding:14px">Pasaporte</button>
+          <button class="chip" style="padding:14px">Carné</button>
+        </div>
+        <button class="btn btn-primary btn-block btn-lg mt-3">Empezar verificación</button>
+      </div>
+
+      <div class="card">
+        <div class="rule"><span class="micro">Qué pasa con tus datos</span></div>
+        <ul class="sub-list" style="margin:0">
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>El documento lo procesa Veriff, no se guarda copia en TFANS.</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Tu nombre real nunca aparece en tu perfil ni en los extractos de tus fans.</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Solo guardamos el resultado: verificada o rechazada, con la fecha.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="stack" style="gap:18px">
+      <div class="card">
+        <div class="rule"><span class="micro">Progreso</span></div>
+        <div class="feed-item"><span class="dot ok"></span><div><p>Correo confirmado</p><span class="micro">Hecho</span></div></div>
+        <div class="feed-item"><span class="dot"></span><div><p>Identidad</p><span class="micro">En curso</span></div></div>
+        <div class="feed-item"><span class="dot" style="background:var(--line-2)"></span><div><p>Cuenta bancaria</p><span class="micro">Pendiente</span></div></div>
+      </div>
+      <div class="card">
+        <div class="rule"><span class="micro">Cuando termines</span></div>
+        <p style="margin:0;font-size:0.9rem;color:var(--muted)">Podrás fijar tu precio, subir contenido y cobrar el primer lunes tras superar 20 € de saldo.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rule mt-4"><span class="micro">Resultado</span></div>
+  <div class="card center" style="padding:44px 24px">
+    <div class="av av-lg" style="margin:0 auto;background:var(--ok);border-color:var(--ok)">
+      <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="#0C0710" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>
+    </div>
+    <h2 class="d-lg mt-3">Ya eres creadora</h2>
+    <p class="lead mt-1" style="margin:8px auto 0">Tu identidad está verificada. Ahora define tu plan y sube tu primera publicación.</p>
+    <div class="row mt-3" style="justify-content:center">
+      <a class="btn btn-primary btn-lg" href="panel.html">Ir a mi panel</a>
+      <a class="btn btn-ghost btn-lg" href="publicar.html">Publicar algo</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

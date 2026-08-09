@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TFANS · Confirmar suscripción</title>
+<link rel="stylesheet" href="assets/tfans.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html">
+      <span class="mark"><svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 8c-1.6-3-4.4-4.2-6.6-3.8.2 2.4 2.2 4.6 5 5.2" fill="#C9A3F0"/>
+        <circle cx="11.5" cy="20" r="8.5" fill="#8B2FD6"/>
+        <circle cx="20.5" cy="20" r="8.5" fill="#C9A3F0"/>
+        <path d="M16 12.4c1.9 1.6 3 4.3 3 7.6s-1.1 6-3 7.6c-1.9-1.6-3-4.3-3-7.6s1.1-6 3-7.6z" fill="#7526B8"/>
+      </svg></span>
+      <span><span class="wordmark"><span>T</span>FANS</span><span class="tagline">Exclusive to you</span></span>
+    </a>
+    <div class="nav-actions"><span class="tag tag-ok">Pago cifrado</span></div>
+  </div>
+</header>
+
+<div class="wrap" style="max-width:1020px">
+  <div class="micro mb-2">Paso 2 de 2 · Pago</div>
+  <h1 class="d-lg mb-3">Confirma tu suscripción</h1>
+
+  <div class="sidebar-layout">
+    <form class="card" onsubmit="return false">
+      <div class="rule"><span class="micro">Contacto</span></div>
+      <label class="field">
+        <span class="micro">Correo electrónico</span>
+        <input class="input" type="email" placeholder="tu@correo.com">
+        <span class="hint">Aquí te llegan la factura y el aviso antes de cada renovación.</span>
+      </label>
+
+      <div class="rule mt-3"><span class="micro">Tarjeta</span></div>
+      <label class="field">
+        <span class="micro">Número</span>
+        <input class="input num" inputmode="numeric" placeholder="4242 4242 4242 4242">
+      </label>
+      <div class="grid g-2" style="gap:14px">
+        <label class="field"><span class="micro">Caducidad</span><input class="input num" placeholder="MM / AA"></label>
+        <label class="field"><span class="micro">CVC</span><input class="input num" placeholder="123"></label>
+      </div>
+
+      <div class="rule mt-3"><span class="micro">Facturación</span></div>
+      <div class="grid g-2" style="gap:14px">
+        <label class="field"><span class="micro">País</span><input class="input" value="España"></label>
+        <label class="field"><span class="micro">Código postal</span><input class="input num" placeholder="28004"></label>
+      </div>
+
+      <button class="btn btn-primary btn-block btn-lg mt-2">Pagar 9,99 € y suscribirme</button>
+      <p class="hint center">En tu extracto aparece como «TF DIGITAL SL», nunca el nombre de la creadora.</p>
+    </form>
+
+    <aside class="stack" style="gap:18px;position:sticky;top:80px">
+      <div class="sub-card">
+        <div class="row mb-2"><div class="av">EV</div><div><strong>Elena Vance</strong><span class="micro" style="display:block">@elenav</span></div></div>
+        <div class="row-between" style="padding-top:14px;border-top:1px solid var(--line)"><span class="muted">Suscripción mensual</span><span class="num">9,99 €</span></div>
+        <div class="row-between mt-1"><span class="muted">IVA incluido</span><span class="num faint">1,73 €</span></div>
+        <div class="row-between mt-2" style="padding-top:14px;border-top:1px solid var(--line)">
+          <span class="micro">Hoy pagas</span><span class="sub-price" style="font-size:2rem">9,99 €</span>
+        </div>
+        <ul class="sub-list">
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Se renueva el 21 de cada mes hasta que la canceles</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Cancelas en dos clics desde Suscripciones</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>7,99 € van directos a Elena</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <div class="rule mt-4"><span class="micro">Después del pago</span></div>
+  <div class="card center" style="padding:44px 24px">
+    <div class="av av-lg" style="margin:0 auto;background:var(--violet);border-color:var(--violet)">
+      <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="#fff" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+    </div>
+    <h2 class="d-lg mt-3">Ya tienes acceso</h2>
+    <p class="lead mt-1" style="margin:8px auto 0">Suscripción activa hasta el 21 de septiembre. Elena recibe una notificación de que has entrado.</p>
+    <div class="row mt-3" style="justify-content:center">
+      <a class="btn btn-primary btn-lg" href="perfil.html">Ver su contenido</a>
+      <a class="btn btn-ghost btn-lg" href="mensajes.html">Escribirle</a>
+    </div>
+    <p class="micro mt-3">Transacción TX-8291042 · Visa •••• 4291</p>
+  </div>
+</div>
+</body>
+</html>

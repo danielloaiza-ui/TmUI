@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TFANS · Nueva publicación</title>
+<link rel="stylesheet" href="assets/tfans.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail">
+    <a class="brand" href="index.html">
+      <span class="mark"><svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 8c-1.6-3-4.4-4.2-6.6-3.8.2 2.4 2.2 4.6 5 5.2" fill="#C9A3F0"/>
+        <circle cx="11.5" cy="20" r="8.5" fill="#8B2FD6"/>
+        <circle cx="20.5" cy="20" r="8.5" fill="#C9A3F0"/>
+        <path d="M16 12.4c1.9 1.6 3 4.3 3 7.6s-1.1 6-3 7.6c-1.9-1.6-3-4.3-3-7.6s1.1-6 3-7.6z" fill="#7526B8"/>
+      </svg></span>
+      <span><span class="wordmark"><span>T</span>FANS</span><span class="tagline">Exclusive to you</span></span>
+    </a>
+    <nav class="rail-nav">
+      <a href="inicio.html" data-k="inicio"><svg viewBox="0 0 24 24"><path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Inicio</a>
+      <a href="explorar.html" data-k="explorar"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Explorar</a>
+      <a href="mensajes.html" data-k="mensajes"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.5 7.2L3 21l1.8-6.5A8 8 0 1 1 21 12z"/></svg>Mensajes</a>
+      <a href="suscripciones.html" data-k="suscripciones"><svg viewBox="0 0 24 24"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 1 0-7.1 7.1L12 21l8.8-8.3a5 5 0 0 0 0-7.1z"/></svg>Suscripciones</a>
+      <a href="panel.html" data-k="panel" aria-current="page"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>Panel</a>
+      <a href="ajustes.html" data-k="ajustes"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M4 12h2m12 0h2M12 4v2m0 12v2"/></svg>Ajustes</a>
+    </nav>
+  </aside>
+  <main class="main">
+    <div class="topbar">
+      <a class="btn btn-quiet" href="panel.html">← Panel</a>
+      <div class="row" style="margin-left:auto">
+        <button class="btn btn-quiet">Guardar borrador</button>
+        <button class="btn btn-primary">Publicar</button>
+      </div>
+    </div>
+    <div class="wrap" style="max-width:1120px">
+      <div class="page-head">
+        <div><h1 class="d-lg">Nueva publicación</h1><p class="lead mt-1">Sube los archivos, decide quién puede verlos y publica.</p></div>
+      </div>
+
+      <div class="sidebar-layout">
+        <div>
+          <div class="rule"><span class="micro">Archivos · 1 de 20</span></div>
+          <div class="card center" style="border-style:dashed;padding:52px 24px">
+            <p class="d-md" style="margin:0">Arrastra tus fotos o vídeos aquí</p>
+            <p class="hint">JPG, PNG, MP4 o MOV · hasta 500 MB por archivo</p>
+            <button class="btn btn-ghost mt-2">Elegir archivos</button>
+          </div>
+
+          <div class="grid g-4 mt-3">
+            <div class="plate square"><div class="plate-fill b"></div><span class="plate-meta">Portada</span></div>
+            <button class="card center" style="display:grid;place-content:center;aspect-ratio:1;border-style:dashed;color:var(--faint);font-size:1.6rem">+</button>
+            <button class="card center" style="display:grid;place-content:center;aspect-ratio:1;border-style:dashed;color:var(--faint);font-size:1.6rem">+</button>
+            <button class="card center" style="display:grid;place-content:center;aspect-ratio:1;border-style:dashed;color:var(--faint);font-size:1.6rem">+</button>
+          </div>
+
+          <div class="rule mt-4"><span class="micro">Texto</span></div>
+          <label class="field"><span class="micro">Título</span><input class="input" placeholder="Serie roja · completa"></label>
+          <label class="field"><span class="micro">Descripción</span><textarea class="input" placeholder="Cuenta qué es y por qué merece la pena abrirlo."></textarea></label>
+        </div>
+
+        <div class="stack" style="gap:18px;position:sticky;top:80px">
+          <div class="card">
+            <div class="rule"><span class="micro">Quién lo ve</span></div>
+            <div class="stack" style="gap:8px">
+              <button class="chip" style="text-align:left;padding:12px 15px">Todo el mundo · gratis</button>
+              <button class="chip" aria-pressed="true" style="text-align:left;padding:12px 15px">Mis suscriptores</button>
+              <button class="chip" style="text-align:left;padding:12px 15px">Pago aparte</button>
+            </div>
+            <label class="field mt-3"><span class="micro">Precio del desbloqueo</span>
+              <input class="input num" value="15,00 €">
+              <span class="hint">Entre 3 € y 100 €. Te quedas 12,00 €.</span>
+            </label>
+          </div>
+
+          <div class="card">
+            <div class="rule"><span class="micro">Cuándo</span></div>
+            <div class="stack" style="gap:8px">
+              <button class="chip" aria-pressed="true" style="padding:10px 15px">Publicar ahora</button>
+              <button class="chip" style="padding:10px 15px">Programar</button>
+            </div>
+            <p class="hint">Tus suscriptores abren más los domingos por la noche.</p>
+          </div>
+
+          <div class="card">
+            <div class="rule"><span class="micro">Aviso de contenido</span></div>
+            <p style="margin:0;font-size:0.88rem;color:var(--muted)">Marca la publicación si incluye desnudo. Sin la etiqueta, moderación puede retirarla.</p>
+            <button class="btn btn-quiet btn-block mt-2">Marcar como sensible</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

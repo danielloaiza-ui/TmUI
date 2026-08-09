@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TFANS · Administración</title>
+<link rel="stylesheet" href="assets/tfans.css">
+</head>
+<body>
+<div class="shell">
+
+  <aside class="rail">
+    <a class="brand" href="index.html">
+      <span class="mark"><svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 8c-1.6-3-4.4-4.2-6.6-3.8.2 2.4 2.2 4.6 5 5.2" fill="#C9A3F0"/>
+        <circle cx="11.5" cy="20" r="8.5" fill="#8B2FD6"/>
+        <circle cx="20.5" cy="20" r="8.5" fill="#C9A3F0"/>
+        <path d="M16 12.4c1.9 1.6 3 4.3 3 7.6s-1.1 6-3 7.6c-1.9-1.6-3-4.3-3-7.6s1.1-6 3-7.6z" fill="#7526B8"/>
+      </svg></span>
+      <span><span class="wordmark"><span>T</span>FANS</span><span class="tagline">Administración</span></span>
+    </a>
+
+    <nav class="rail-nav">
+      <a href="admin.html"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>Resumen</a>
+      <a href="admin.html#usuarios"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M17 11.5a3 3 0 1 0 0-6M18 20h3.5a5.5 5.5 0 0 0-4-5.3"/></svg>Usuarios</a>
+      <a href="admin.html#moderacion" aria-current="page"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 7.9-8 9-4.8-1.1-8-4.5-8-9V6z"/></svg>Moderación</a>
+      <a href="admin.html#auditoria"><svg viewBox="0 0 24 24"><path d="M4 4h12l4 4v12H4z"/><path d="M8 12h8M8 16h5"/></svg>Auditoría</a>
+      <a href="ajustes.html"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M4 12h2m12 0h2M12 4v2m0 12v2"/></svg>Ajustes</a>
+    </nav>
+
+    <div class="rail-foot">
+      <div class="card" style="padding:16px;border-color:#5C2730">
+        <span class="micro" style="color:var(--bad)">Requiere atención</span>
+        <p class="mt-1" style="margin:0;font-size:0.88rem">12 reportes críticos sin revisar</p>
+        <a class="btn btn-quiet btn-block mt-2" href="#moderacion">Abrir cola</a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div class="search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" placeholder="Buscar usuario, reporte o ID de publicación">
+      </div>
+      <div class="row" style="margin-left:auto">
+        <button class="btn btn-quiet">Exportar CSV</button>
+        <div class="av av-sm">DL</div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="page-head">
+        <div>
+          <h1 class="d-lg">Moderación</h1>
+          <p class="lead mt-1">Cola de revisión y cumplimiento de normas. Ordenada por gravedad y antigüedad.</p>
+        </div>
+        <div class="row">
+          <button class="chip" aria-pressed="true">Sin revisar</button>
+          <button class="chip">Escalados</button>
+          <button class="chip">Resueltos hoy</button>
+        </div>
+      </div>
+
+      <div class="grid g-4 mb-3">
+        <div class="metric" style="border-color:#5C2730">
+          <span class="micro" style="color:var(--bad)">Críticos · resolver hoy</span>
+          <span class="metric-val num" style="color:var(--bad)">12</span>
+          <span class="metric-foot">El más antiguo lleva 3 h</span>
+        </div>
+        <div class="metric">
+          <span class="micro">En cola</span>
+          <span class="metric-val num">142</span>
+          <span class="metric-foot">31 imágenes · 84 mensajes · 27 vídeos</span>
+        </div>
+        <div class="metric">
+          <span class="micro">Revisados hoy</span>
+          <span class="metric-val num">856</span>
+          <span class="metric-foot"><span class="delta-up">↑ 9 %</span> frente a ayer</span>
+        </div>
+        <div class="metric">
+          <span class="micro">Tiempo medio</span>
+          <span class="metric-val num">4,5 min</span>
+          <span class="metric-foot">Objetivo: menos de 6 min</span>
+        </div>
+      </div>
+
+      <div class="rule" id="moderacion"><span class="micro">Cola · 142 elementos</span></div>
+
+      <div class="grid g-3 mb-3">
+        <article class="card card-flush">
+          <div class="plate wide" style="border-radius:0">
+            <div class="plate-fill b"></div>
+            <span class="tag tag-bad plate-tag">Crítico</span>
+            <span class="plate-meta">#8829</span>
+          </div>
+          <div style="padding:18px">
+            <div class="cell-user"><div class="av av-sm">LA</div><span>luna_art<em>Publicado hace 2 h</em></span></div>
+            <p class="micro mt-2" style="color:var(--bad)">Motivo del reporte</p>
+            <p style="margin:6px 0 0;font-size:0.9rem">Desnudo parcial sin etiquetar. Reportado por 4 usuarios.</p>
+            <div class="row mt-3" style="gap:8px">
+              <button class="btn btn-primary" style="flex:1">Retirar</button>
+              <button class="btn btn-ghost" style="flex:1">Etiquetar</button>
+              <button class="btn btn-quiet">Ignorar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card-flush">
+          <div style="background:var(--ink-600);padding:26px 22px;border-bottom:1px solid var(--line);position:relative">
+            <span class="tag tag-warn" style="position:absolute;top:12px;right:12px">Media</span>
+            <p style="margin:0;font-family:var(--display);font-size:1.15rem;line-height:1.35;color:var(--muted)">
+              «Oye, me preguntaba si podías enviarme contenido personalizado fuera de la plataforma, te pago por fuera…»
+            </p>
+          </div>
+          <div style="padding:18px">
+            <div class="cell-user"><div class="av av-sm">U8</div><span>user_8829<em>Enviado hace 15 min</em></span></div>
+            <p class="micro mt-2" style="color:var(--warn)">Motivo del reporte</p>
+            <p style="margin:6px 0 0;font-size:0.9rem">Intento de transacción fuera de la plataforma.</p>
+            <div class="row mt-3" style="gap:8px">
+              <button class="btn btn-primary" style="flex:1">Avisar</button>
+              <button class="btn btn-ghost" style="flex:1">Suspender</button>
+              <button class="btn btn-quiet">Ignorar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card-flush">
+          <div class="plate wide" style="border-radius:0">
+            <div class="plate-fill c"></div>
+            <span class="tag tag-warn plate-tag">Alta</span>
+            <span class="plate-meta">#8830</span>
+          </div>
+          <div style="padding:18px">
+            <div class="cell-user"><div class="av av-sm">VV</div><span>valentina_v<em>Publicado hace 5 h</em></span></div>
+            <p class="micro mt-2" style="color:var(--warn)">Motivo del reporte</p>
+            <p style="margin:6px 0 0;font-size:0.9rem">Posible contenido de terceros. Coincidencia con huella digital.</p>
+            <div class="row mt-3" style="gap:8px">
+              <button class="btn btn-primary" style="flex:1">Retirar</button>
+              <button class="btn btn-ghost" style="flex:1">Pedir prueba</button>
+              <button class="btn btn-quiet">Ignorar</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="rule" id="usuarios"><span class="micro">Usuarios · verificación pendiente</span></div>
+
+      <section class="card card-flush mb-3">
+        <table class="table">
+          <thead><tr><th>Usuario</th><th>Rol</th><th>Verificación</th><th>Última actividad</th><th style="text-align:right">Acciones</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><div class="cell-user"><div class="av av-sm">CV</div><span>claudia_vox<em>claudia.vox@example.com</em></span></div></td>
+              <td><span class="tag tag-vip">Creadora</span></td>
+              <td><span class="tag tag-ok">Verificada</span></td>
+              <td class="muted">Hace 5 min</td>
+              <td style="text-align:right"><button class="btn btn-quiet">Abrir</button></td>
+            </tr>
+            <tr>
+              <td><div class="cell-user"><div class="av av-sm">PM</div><span>pixel_master<em>pixel.art@service.io</em></span></div></td>
+              <td><span class="tag tag-vip">Creador</span></td>
+              <td><span class="tag tag-warn">En revisión · 2 h</span></td>
+              <td class="muted">Hace 2 h</td>
+              <td style="text-align:right"><button class="btn btn-primary">Revisar</button></td>
+            </tr>
+            <tr>
+              <td><div class="cell-user"><div class="av av-sm">JD</div><span>juan_diego<em>jdiego99@gmail.com</em></span></div></td>
+              <td><span class="tag plain">Usuario</span></td>
+              <td><span class="tag tag-bad">Rechazada · documento ilegible</span></td>
+              <td class="muted">Ayer</td>
+              <td style="text-align:right"><button class="btn btn-quiet">Reabrir</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-foot">
+          <span>3 de 128 pendientes</span>
+          <div class="row"><button class="btn btn-quiet">Anterior</button><button class="btn btn-quiet">Siguiente</button></div>
+        </div>
+      </section>
+
+      <div class="rule" id="auditoria"><span class="micro">Auditoría · 1.284.092 acciones</span></div>
+
+      <section class="card card-flush">
+        <table class="table">
+          <thead><tr><th>Hora</th><th>Actor</th><th>Acción</th><th>Entidad</th><th>Resultado</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><span class="num">14:32:01</span><br><span class="micro">24 oct</span></td>
+              <td><div class="cell-user"><div class="av av-sm">JD</div><span>juan_delgado<em>192.168.1.45</em></span></div></td>
+              <td><code class="tag plain">perfil.actualizar</code></td>
+              <td class="muted">user_8829</td>
+              <td><span class="tag tag-ok">Correcto</span></td>
+            </tr>
+            <tr>
+              <td><span class="num">14:28:15</span><br><span class="micro">24 oct</span></td>
+              <td><div class="cell-user"><div class="av av-sm">RA</div><span>root_access<em>45.12.88.2</em></span></div></td>
+              <td><code class="tag tag-bad">medios.borrado_masivo</code></td>
+              <td class="muted">media_vault_01</td>
+              <td><span class="tag tag-bad">Crítico</span></td>
+            </tr>
+            <tr>
+              <td><span class="num">14:15:59</span><br><span class="micro">24 oct</span></td>
+              <td><div class="cell-user"><div class="av av-sm">MS</div><span>marta_soporte<em>192.168.1.12</em></span></div></td>
+              <td><code class="tag plain">acceso.restablecer_clave</code></td>
+              <td class="muted">user_1102</td>
+              <td><span class="tag tag-ok">Correcto</span></td>
+            </tr>
+            <tr>
+              <td><span class="num">13:50:22</span><br><span class="micro">24 oct</span></td>
+              <td><div class="cell-user"><div class="av av-sm">LM</div><span>luis_moderador<em>10.0.0.152</em></span></div></td>
+              <td><code class="tag plain">usuario.suspender</code></td>
+              <td class="muted">spammer_99</td>
+              <td><span class="tag tag-ok">Correcto</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-foot">
+          <span>1–4 de 1.284.092 · se conservan 90 días</span>
+          <button class="btn btn-quiet">Exportar rango</button>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+</body>
+</html>

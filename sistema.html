@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TFANS · Sistema de interfaz</title>
+<link rel="stylesheet" href="assets/tfans.css">
+<style>
+  .swatch{border:1px solid var(--line); border-radius:var(--r); overflow:hidden}
+  .swatch .chip-color{height:78px}
+  .swatch .meta{padding:11px 13px; background:var(--ink-700)}
+  .swatch code{font-family:var(--mono); font-size:0.72rem; color:var(--muted)}
+  .demo{display:flex; gap:12px; flex-wrap:wrap; align-items:center}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html">
+      <span class="mark"><svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 8c-1.6-3-4.4-4.2-6.6-3.8.2 2.4 2.2 4.6 5 5.2" fill="#C9A3F0"/>
+        <circle cx="11.5" cy="20" r="8.5" fill="#8B2FD6"/>
+        <circle cx="20.5" cy="20" r="8.5" fill="#C9A3F0"/>
+        <path d="M16 12.4c1.9 1.6 3 4.3 3 7.6s-1.1 6-3 7.6c-1.9-1.6-3-4.3-3-7.6s1.1-6 3-7.6z" fill="#7526B8"/>
+      </svg></span>
+      <span><span class="wordmark"><span>T</span>FANS</span><span class="tagline">Sistema de interfaz</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Portada</a><a href="explorar.html">Explorar</a><a href="perfil.html">Perfil</a>
+      <a href="panel.html">Panel</a><a href="admin.html">Admin</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="micro mb-2">Dirección de arte · v2</div>
+  <h1 class="d-xl">Noir de<br><span class="it">alta gama.</span></h1>
+  <p class="lead mt-3">La v1 aplicaba el lavanda de marca como relleno de todas las superficies: sin jerarquía, con texto gris sobre fondo claro y cada pantalla compitiendo por atención. Aquí el lavanda vuelve a ser lo que era en el logo, un acento; el fondo pasa a tinta berenjena y el color se reserva para lo que el usuario debe mirar: el precio, el botón y lo que está bloqueado.</p>
+
+  <div class="rule mt-4"><span class="micro">Color · 11 valores, cero gradientes</span></div>
+  <div class="grid g-4 mb-3">
+    <div class="swatch"><div class="chip-color" style="background:#0C0710"></div><div class="meta"><strong>Tinta 900</strong><br><code>#0C0710 · fondo</code></div></div>
+    <div class="swatch"><div class="chip-color" style="background:#140C1B"></div><div class="meta"><strong>Tinta 800</strong><br><code>#140C1B · barras</code></div></div>
+    <div class="swatch"><div class="chip-color" style="background:#1B1124"></div><div class="meta"><strong>Tinta 700</strong><br><code>#1B1124 · tarjetas</code></div></div>
+    <div class="swatch"><div class="chip-color" style="background:#31203D"></div><div class="meta"><strong>Filete</strong><br><code>#31203D · bordes</code></div></div>
+    <div class="swatch"><div class="chip-color" style="background:#8B2FD6"></div><div class="meta"><strong>Violeta</strong><br><code>#8B2FD6 · acción</code></div></div>
+    <div class="swatch"><div class="chip-color" style="background:#C9A3F0"></div><div class="meta"><strong>Lila</strong><br><code>#C9A3F0 · dato clave</code></div></div>
+    <div class="swatch"><div class="chip-color" style="background:#FF8FCF"></div><div class="meta"><strong>Rosa</strong><br><code>#FF8FCF · directo, propina</code></div></div>
+    <div class="swatch"><div class="chip-color" style="background:#F3EAFB"></div><div class="meta"><strong>Lavanda papel</strong><br><code>#F3EAFB · uso puntual</code></div></div>
+  </div>
+
+  <div class="grid g-3 mb-3">
+    <div class="card"><span class="micro">Regla 1</span><p style="margin:8px 0 0;font-size:0.92rem">El violeta solo va en superficies que se pulsan. Si no es un botón o un elemento activo, no lleva violeta de fondo.</p></div>
+    <div class="card"><span class="micro">Regla 2</span><p style="margin:8px 0 0;font-size:0.92rem">Las tarjetas se separan por filete de 1 px, no por relleno de color. Así el ojo lee estructura, no bloques.</p></div>
+    <div class="card"><span class="micro">Regla 3</span><p style="margin:8px 0 0;font-size:0.92rem">El rosa está reservado a directo, propinas y «me gusta». Si aparece en más sitios, deja de significar algo.</p></div>
+  </div>
+
+  <div class="rule"><span class="micro">Tipografía · tres papeles</span></div>
+  <div class="grid g-3 mb-3">
+    <div class="card">
+      <span class="micro">Display · Instrument Serif</span>
+      <p class="d-lg" style="margin:12px 0 0">Elena Vance</p>
+      <p class="hint">Titulares, nombres y precios. Cursiva para la frase que carga la emoción. Es lo que da el aire editorial que pedía la marca.</p>
+    </div>
+    <div class="card">
+      <span class="micro">Interfaz · Archivo</span>
+      <p style="font-size:1.35rem;font-weight:600;margin:12px 0 0">Suscribirme · 9,99 €</p>
+      <p class="hint">Botones, textos y formularios. Grotesca estrecha, legible a 13 px, sin personalidad que estorbe.</p>
+    </div>
+    <div class="card">
+      <span class="micro">Datos · JetBrains Mono</span>
+      <p class="num" style="font-size:1.35rem;margin:12px 0 0">14.280,50 €</p>
+      <p class="hint">Cifras, horas, IDs y microetiquetas. Cifras tabulares para que las columnas cuadren.</p>
+    </div>
+  </div>
+
+  <div class="rule"><span class="micro">Firma · velo de trama</span></div>
+  <div class="sidebar-layout mb-3">
+    <div class="grid g-3">
+      <div class="plate"><div class="plate-fill a"></div><span class="tag tag-ok plate-tag">Gratis</span></div>
+      <div class="plate"><div class="plate-fill b"></div>
+        <div class="veil">
+          <svg class="lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          <button class="price">Con suscripción</button>
+        </div>
+      </div>
+      <div class="plate"><div class="plate-fill f"></div>
+        <div class="veil">
+          <svg class="lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          <button class="price">Abrir · 15,00 €</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <span class="micro">Por qué así</span>
+      <p style="margin:10px 0 0;font-size:0.92rem">El desenfoque es el recurso de todo el sector y además se puede revertir en el navegador. Aquí el contenido bloqueado se tapa con una trama de puntos violeta sobre tinta: es opaca, es plana, se reconoce de lejos y solo puede ser de TFANS.</p>
+      <p style="margin:12px 0 0;font-size:0.92rem">El estado se lee en un vistazo: sin velo es gratis, velo con «con suscripción» entra en el plan, velo con precio se paga aparte. Tres estados, tres formas.</p>
+    </div>
+  </div>
+
+  <div class="rule"><span class="micro">Componentes</span></div>
+  <div class="grid g-2 mb-3">
+    <div class="card">
+      <span class="micro">Botones</span>
+      <div class="demo mt-2">
+        <button class="btn btn-primary">Suscribirme</button>
+        <button class="btn btn-ghost">Ver perfil</button>
+        <button class="btn btn-quiet">Cancelar</button>
+        <button class="btn btn-pink">Propina</button>
+      </div>
+      <p class="hint">Un solo botón primario por pantalla. El rosa solo para propinas.</p>
+    </div>
+    <div class="card">
+      <span class="micro">Estados</span>
+      <div class="demo mt-2">
+        <span class="tag tag-ok">Verificada</span>
+        <span class="tag tag-warn">En revisión</span>
+        <span class="tag tag-bad">Rechazada</span>
+        <span class="tag tag-live">En directo</span>
+        <span class="tag tag-vip">Suscripción</span>
+      </div>
+      <p class="hint">Color más punto más palabra: nunca solo color, por daltonismo.</p>
+    </div>
+    <div class="card">
+      <span class="micro">Métrica</span>
+      <div class="metric mt-2" style="border:0;padding:0">
+        <span class="micro">Ganancias del mes</span>
+        <span class="metric-val num">28.450 €</span>
+        <span class="metric-foot"><span class="delta-up">↑ 8,4 %</span> frente a julio</span>
+      </div>
+      <p class="hint">Cifra en display, etiqueta en mono, comparación siempre con referencia.</p>
+    </div>
+    <div class="card">
+      <span class="micro">Campo</span>
+      <label class="field mt-2" style="margin:0"><span class="micro">Precio del desbloqueo</span>
+        <input class="input num" value="15,00 €"><span class="hint">Entre 3 € y 100 €. Te quedas 12,00 €.</span></label>
+    </div>
+  </div>
+
+  <div class="rule"><span class="micro">Qué cambió respecto a la v1</span></div>
+  <div class="card card-flush mb-3">
+    <table class="table">
+      <thead><tr><th>Problema en la v1</th><th>Decisión</th></tr></thead>
+      <tbody>
+        <tr><td>Lavanda como relleno de todas las superficies</td><td>Fondo tinta; lavanda solo en texto de dato y estados</td></tr>
+        <tr><td>Texto gris claro sobre lavanda, ilegible</td><td>Crema sobre tinta; contraste mínimo 4.5:1 en todo el texto</td></tr>
+        <tr><td>Tarjetas claras y oscuras mezcladas en la misma vista</td><td>Una sola familia de superficie por pantalla</td></tr>
+        <tr><td>Mayúsculas y minúsculas inconsistentes entre pantallas</td><td>Frases en mayúscula inicial; versalitas solo en microetiquetas mono</td></tr>
+        <tr><td>Métricas con iconos decorativos y sin referencia</td><td>Sin icono; cifra, etiqueta y comparación con el periodo anterior</td></tr>
+        <tr><td>Contenido bloqueado con desenfoque genérico</td><td>Velo de trama de marca, con el precio visible antes de pulsar</td></tr>
+        <tr><td>Botones morados repetidos por toda la pantalla</td><td>Jerarquía de cuatro botones y un solo primario por vista</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="rule"><span class="micro">Accesibilidad</span></div>
+  <div class="grid g-3">
+    <div class="card"><span class="micro">Contraste</span><p style="margin:8px 0 0;font-size:0.92rem">Texto principal 14,8:1 sobre tinta. Ningún texto informativo baja de 4,5:1.</p></div>
+    <div class="card"><span class="micro">Teclado</span><p style="margin:8px 0 0;font-size:0.92rem">Foco visible en lila a 2 px con separación, en todos los controles.</p></div>
+    <div class="card"><span class="micro">Movimiento</span><p style="margin:8px 0 0;font-size:0.92rem">Todas las transiciones se anulan con <code>prefers-reduced-motion</code>.</p></div>
+  </div>
+</div>
+
+</body>
+</html>

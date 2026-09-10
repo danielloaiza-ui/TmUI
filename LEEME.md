@@ -27,10 +27,12 @@ Sin un solo gradiente. Todos los colores son planos.
 
 ### Tipografía
 
-- **Instrument Serif** — titulares, nombres de creadoras y precios. Da el aire editorial.
-- **Archivo** — interfaz, botones y formularios.
-- **JetBrains Mono** — cifras, horas, IDs y microetiquetas.
-- **Poppins Extra Bold** — solo el logotipo, como hasta ahora.
+Una sola familia: **Inter**, la misma que ya está en producción en el front (`Vesta-Web`). Se
+diferencian los papeles por peso y tracking, no por familia:
+
+- **Inter 600**, tracking cerrado — titulares, nombres de creadoras, precios y el logotipo.
+- **Inter 400 / 500** — interfaz, botones y formularios.
+- **Monoespaciada del sistema** (`ui-monospace`) — cifras, horas, IDs y microetiquetas, con cifras tabulares.
 
 ### La firma: velo de trama
 
